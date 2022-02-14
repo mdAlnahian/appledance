@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More Price Controller</title>
+    <style>
+      body {
+        background-color: rgb(19, 2, 2);
+        color: rgb(231, 237, 243);
+      }
+      header {
+        text-align: center;
+        font-size: 1.6rem;
+        margin: 24px 0px;
+        text-transform: uppercase;
+      }
+      .product-data , .product-data2 {
+        padding: 35px;
+        text-align: center;
+        font-size: 35px;
+        background-color: rgb(100, 4, 4);
+      }
+      .price-count1 , .price-count3{
+        text-align: center;
+        margin-top: 1rem;
+      }
+      .price-count2 , .price-count4 {
+        text-align: center;
+        margin-top: 0.5rem;
+        font-size: 35px;
+        margin-bottom: 35px;
+      }
+      .btn {
+        font-size: 25px;
+      }
+      .total-data{
+          background-color: rgba(77, 3, 7, 0.815);
+          padding: 25px;
+          font-size: 25px;
+          letter-spacing: px;
+          font-weight: lighter;
+          text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Lets Buy some apple gadget if you have two kidney</header>
+    <main>
+      <section>
+        <div class="product-data">Iphone 14 Pro Max</div>
+        <div class="price-count1">
+          <button id="main-btn-1" class="btn">-</button>
+          <span id="main-num-1" class="btn"> 1 </span>
+          <button id="main-btn-2" class="btn">+</button>
+        </div>
+        <br />
+        <div class="price-count2">
+          $ <span id="product-balance-1" class=""> 1200</span>
+        </div>
+      </section>
+        <!-- case section  -->
+      <section>
+        <div class="product-data2">Iphone 14 Pro Max Case</div>
+        <div class="price-count3">
+          <button id="main-btn-3" class="btn">-</button>
+          <span id="main-num-2" class="btn"> 1 </span>
+          <button id="main-btn-4" class="btn">+</button>
+        </div>
+        <br />
+        <div class="price-count4">
+          $ <span id="product-balance-2" class=""> 60</span>
+        </div>
+      </section>
+         <!-- final money section    -->
+      <section class="total-data">
+            <div>Initial Cost = $ <span id="initial-price">1260</span>   </div>
+            <div>Tax Included = $ <span id="tax-amount">00</span>    </div>
+            <div>Total Cost = $ <span id="total-price">00</span>   </div>
+            <div>Total Including 10% Donation To APPLE = $ <span id="donate-price">00</span>   </div>
+      </section>
+    </main>
+    <script src="js/final-js.js"></script>
+  </body>
+</html>
